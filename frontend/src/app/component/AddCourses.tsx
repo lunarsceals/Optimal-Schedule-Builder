@@ -6,19 +6,19 @@ import TabButton from "./TabButton";
 const AddCourses = () => {
   return (
     <div className="min-w-min">
-      <div className="flex items-stretch gap-2">
+      <div className="flex items-stretch gap-2 text-lg font-semibold text-white">
         <TabButton tabName="Section" />
         <TabButton tabName="Instructor" />
         <TabButton tabName="CRN" />
       </div>
-      <div className="bg-red-100 p-10">
+      <div className="border-x-4 border-b-4 bg-[#FFF7F9] p-10">
         <div className="mb-10 flex justify-center">
-          <div className="space-y-4">
+          <div className="space-y-8 text-xl font-bold">
             <SearchBar label={"subject"} />
             <SearchBar label={"course"} />
           </div>
         </div>
-        <section className="flex justify-center gap-4 sm:justify-end">
+        <section className="flex flex-col justify-center gap-4 sm:flex-row sm:justify-end">
           <Button text={"search"} />
           <Button text={"add"} />
         </section>
