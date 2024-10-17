@@ -6,7 +6,7 @@ interface Prop {
 
 const Button = (prop: Prop) => {
   return (
-    <button className="rounded-md bg-red-400 px-4 py-2">
+    <button className="rounded-md bg-[#BA0C2F] px-4 py-2 font-semibold text-white">
       {prop.text.toUpperCase()}
     </button>
   );
