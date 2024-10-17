@@ -7,11 +7,13 @@ interface Prop {
 //TODO: replace DropDown placeholder with component
 const SearchBar = (prop: Prop) => {
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid gap-5 text-right sm:grid-cols-3">
       <label htmlFor={prop.label} className="col-start-1">
-        {prop.label.toLowerCase().charAt(0).toUpperCase() + prop.label.slice(1)}
+        {prop.label.toLowerCase().charAt(0).toUpperCase() +
+          prop.label.slice(1) +
+          ":"}
       </label>
-      <select>
+      <select className="col-span-2 w-80 font-normal">
         <option>DropDown</option>
       </select>
     </div>
