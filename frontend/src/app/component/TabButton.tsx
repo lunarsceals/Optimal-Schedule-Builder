@@ -6,7 +6,7 @@ interface Prop {
 
 const TabButton = (prop: Prop) => {
   return (
-    <button className="flex-1 text-nowrap rounded-t-md bg-red-400 px-6 py-1 text-justify">
+    <button className="flex-1 text-nowrap rounded-t-md bg-[#BA0C2F] px-6 py-1 text-justify">
       By {prop.tabName}
     </button>
   );
